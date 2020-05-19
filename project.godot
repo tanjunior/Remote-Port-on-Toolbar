@@ -15,7 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Remote port on Toolbar"
+config/name="Remote Port on Toolbar"
+run/main_scene="res://addons/ToolbarPort/Control.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]

@@ -9,12 +9,13 @@ func _enter_tree():
 	
 	var current_port = get_editor_interface().get_editor_settings().get_setting("network/debug/remote_port")
 	add_control_to_container(EditorPlugin.CONTAINER_TOOLBAR, control)
-	control.edit.text = current_port
+	control.edit.text = str(current_port)
 
 
 func _exit_tree():
 	remove_control_from_container(EditorPlugin.CONTAINER_TOOLBAR, control)
 	control.queue_free()
 
+
 func _on_setting_changed(port):
-	get_editor_interface().get_editor_settings().set_setting("network/debug/remote_port", port)
+	get_editor_interface().get_editor_settings().set_setting("network/debug/remote_port", int(port))
