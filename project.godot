@@ -23,10 +23,6 @@ config/icon="res://icon.png"
 
 remote_port=6110
 
-[debug]
-
-settings/network/remote_port=6010
-
 [editor_plugins]
 
 enabled=PoolStringArray( "ToolbarPort" )
