@@ -19,6 +19,14 @@ config/name="Remote Port on Toolbar"
 run/main_scene="res://addons/ToolbarPort/Control.tscn"
 config/icon="res://icon.png"
 
+[custom_settings]
+
+remote_port=6110
+
+[debug]
+
+settings/network/remote_port=6010
+
 [editor_plugins]
 
 enabled=PoolStringArray( "ToolbarPort" )
